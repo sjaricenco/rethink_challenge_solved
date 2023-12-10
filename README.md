@@ -7,3 +7,7 @@ The following source code is the solution to the RethinkFirst's take home challe
 `/api` contains a .NET 6 Web API serving a pseudo database of contacts. The actual source of data is a contacts.json file. It contains a single REST API controller + global error handling middleware. 
 
 ## How to run Angular application ##
+
+There are 2 ways to launch the Angular front-end:
+
+1. Navigate inside of `/ui` folder. Open source code in terminal or VS Code. Run the following command: `ng serve`
