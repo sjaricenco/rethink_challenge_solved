@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RethinkHomeworkAPI", "RethinkHomeworkAPI\RethinkHomeworkAPI.csproj", "{83EFBD37-029C-4FF3-9428-B1E0585DEFC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RethinkHomeworkAPI.Tests", "RethinkHomeworkAPI.Tests\RethinkHomeworkAPI.Tests.csproj", "{13F35EA1-5166-48DC-B518-FE68C0578576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83EFBD37-029C-4FF3-9428-B1E0585DEFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83EFBD37-029C-4FF3-9428-B1E0585DEFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83EFBD37-029C-4FF3-9428-B1E0585DEFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83EFBD37-029C-4FF3-9428-B1E0585DEFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F35EA1-5166-48DC-B518-FE68C0578576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F35EA1-5166-48DC-B518-FE68C0578576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F35EA1-5166-48DC-B518-FE68C0578576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F35EA1-5166-48DC-B518-FE68C0578576}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49C441E7-7265-416F-A47B-6EEB3F5E49EB}
+	EndGlobalSection
+EndGlobal

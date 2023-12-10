@@ -1,0 +1,49 @@
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add/Update New Contact</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="reverseShowUpdate()"></button>
+        </div>
+        <form [formGroup]="formValue" (ngSubmit)="onSubmit()">              
+          <div class="modal-body">
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" formControlName="firstName" class="form-control" id="firstName" [class.invalid]="firstName?.invalid">
+                  <span class="text-danger"
+                      *ngIf="(firstName?.touched && firstName?.invalid)">
+                      First Name is required
+                  </span>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text"formControlName="lastName" class="form-control" id="lastName" [class.invalid]="lastName?.invalid">
+                    <span class="text-danger"
+                      *ngIf="(lastName?.touched && lastName?.invalid)">
+                      Last Name is required
+                  </span>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="emailHelp" [class.invalid]="email?.invalid">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <span class="text-danger"
+                      *ngIf="(email?.touched && email?.errors?.['required'])">
+                      Email is required
+                    </span>
+                    <span class="text-danger"
+                      *ngIf="(email?.touched && email?.errors?.['email'])">
+                      Email must be in username&#64;domain format
+                    </span>
+                  </div>            
+                </div>
+                <div class="modal-footer">
+                  <button type="button"  id="cancel" class="btn btn-secondary" (click)="reverseShowUpdate()" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" *ngIf="showAdd" id="add" (click)="postContactDetails()" class="btn btn-primary" [disabled]="!formValue.valid">Add Contact</button>
+                  <button type="submit" *ngIf="showUpdate" id="update" (click)="updateContact()" class="btn btn-primary" [disabled]="!formValue.valid">Update Contact</button>
+                </div>
+        </form>
+      </div>
+    </div>
+  </div>

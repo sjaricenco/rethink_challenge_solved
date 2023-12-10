@@ -1,0 +1,56 @@
+<div class="d-flex">
+    <button type="button"
+            (click)="clickAddContact()"
+            class="btn btn-success my-5 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal">New</button>
+</div>
+
+
+<div class="toast">
+    <div class="toast-header">
+      Toast Header
+    </div>
+    <div class="toast-body">
+      Some text inside the toast body
+    </div>
+  </div>
+  
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of contactData">
+            <td>{{row.id}}</td>
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.email}}</td>
+            <td>
+                <button type="button"
+                (click)="editContact(row)"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Edit</button>
+            </td>
+            <td>
+                <button (click)="deleteContact(row)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<app-contancts-modal [showAdd]="showAdd"
+                     [showUpdate]="showUpdate"
+                     [contactModelObj]="contactModelObj"
+                     (createContactEvent)="handleCreateContactEvent($event)"
+                     (updateContactEvent)="handleUpdateContactEvent($event)"
+                     (resetContactDataEvent)="handleresetContactDataEvent()">
+</app-contancts-modal>
