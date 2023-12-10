@@ -1,3 +1,5 @@
+![image](https://github.com/sjaricenco/rethink_challenge_solved/assets/85944475/2bdab17e-8d3d-4cb2-abdd-78c38db53b71)
+
 ## Summary ##
 
 The following source code is the solution to the RethinkFirst's take home challenge. Solution is composed of 2 folders: `/ui` and `/api`
