@@ -18,7 +18,7 @@ There are 2 ways to launch the Angular front-end:
    Once image is successfully created, start a new container with the following command: `docker container run -d -p 8081:80 --rm rethink_ui:latest`
 
 2) You can also run the Angular app locally. To do so, navigate inside of `/ui` folder. Open source code in terminal or VS Code. Modify /src/app/service/api.service.ts file on line 12.
-   Change it to `this._baseUrl = "[http://localhost:7264";](https://localhost:7264/)`
+   Change it to `this._baseUrl = "https://localhost:7264/`
    **Note**: you need to do this only if you want to run both the UI and the API locally in Development mode
 
    Now run the following command: `ng serve`. This will launch a local development version of the app.
@@ -33,7 +33,7 @@ Similar to the UI, there are two ways to run the .NET 6 REST API.
 
    First run `docker image build -t rethink_homework_api ./` to create the Docker image. Next, run `docker container run -dp 8080:80 --rm rethink_homework_api:latest` to launch the actual container.
 
-   **Note:** If you navigate to [localhost:8080/](http://localhost:8080/swagger/index.html)http://localhost:8080/swagger/index.html you will be presented with an interactive Swagger API testing screen
+   **Note:** If you navigate to http://localhost:8080/swagger/index.html you will be presented with an interactive Swagger API testing screen
 
    ![image](https://github.com/sjaricenco/rethink_challenge_solved/assets/85944475/a13a159d-81a6-4e63-a3a4-4565bd506eb4)
 
