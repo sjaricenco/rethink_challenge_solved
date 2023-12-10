@@ -6,7 +6,7 @@ The following source code is the solution to the RethinkFirst's take home challe
 
 `/api` contains a .NET 6 Web API serving a pseudo database of contacts. The actual source of data is a contacts.json file. It contains a single REST API controller + global error handling middleware. 
 
-## How to run Angular application ##
+## How to run Angular UI application ##
 
 There are 2 ways to launch the Angular front-end:
 
@@ -21,3 +21,10 @@ There are 2 ways to launch the Angular front-end:
 
    Now run the following command: `ng serve`. This will launch a local development version of the app.
    **Note:** if the .NET Core API is not running, you will not see any data brought back from the API.
+
+## How to run .NET API application ##
+
+Similar to the UI, there are two ways to run the .NET 6 REST API.
+
+1) Run it locally by navigating to the `/api` folder. Open the `RethinkHomeworkAPI.sln` solution in Visual Studio and launch the app in Debug mode.
+2) (Recommended) 
