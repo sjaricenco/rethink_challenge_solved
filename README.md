@@ -15,5 +15,9 @@ There are 2 ways to launch the Angular front-end:
    Run the following command to create Docker image: `docker image build -t rethink_homework_api ./`
    Once image is successfully created, start a new container with the following command: `docker container run -dp 8080:80 --rm rethink_homework_api:latest`
 
-3) Navigate inside of `/ui` folder. Open source code in terminal or VS Code.  Run the following command: `ng serve`. This will launch a local development version of the app.
-   Note: if the .NET Core API is not running, you will not see any data brought back from the API.
+2) You can also run the Angular app locally. To do so, navigate inside of `/ui` folder. Open source code in terminal or VS Code. Modify /src/app/service/api.service.ts file on line 12.
+   Change it to `this._baseUrl = "[http://localhost:7264";](https://localhost:7264/)`
+   **Note**: you need to do this only if you want to run both the UI and the API locally in Development mode
+
+   Now run the following command: `ng serve`. This will launch a local development version of the app.
+   **Note:** if the .NET Core API is not running, you will not see any data brought back from the API.
