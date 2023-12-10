@@ -1,3 +1,5 @@
+## Summary ##
+
 The following source code is the solution to the RethinkFirst's take home challenge. Solution is composed of 2 folders: `/ui` and `/api`
 
 `/ui` contains the source for an Angular 17 SPA (single page application). This application contains basic CRUD functionality along with some animations and input validation.
