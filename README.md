@@ -4,7 +4,7 @@
 
 The following source code is the solution to the RethinkFirst's take home challenge. Solution is composed of 2 folders: `/ui` and `/api`
 
-`/ui` contains the source for an Angular 17 SPA (single page application). This application contains basic CRUD functionality along with some animations and input validation.
+`/ui` contains the source for an Angular 17 SPA (single page application) + unit tests (Jasmine + Karma). This application contains basic CRUD functionality along with some animations and input validation.
 
 `/api` contains a .NET 6 Web API serving a pseudo database of contacts. The actual source of data is a contacts.json file. It contains a single REST API controller + unit tests + global error handling middleware. 
 
@@ -23,6 +23,8 @@ There are 2 ways to launch the Angular front-end:
 
    Now run the following command: `ng serve`. This will launch a local development version of the app.
    **Note:** if the .NET Core API is not running, you will not see any data brought back from the API.
+
+![image](https://github.com/sjaricenco/rethink_challenge_solved/assets/85944475/ecfdda07-5162-41a4-adbc-6029a35b2083)
 
 ## How to run .NET API application ##
 
